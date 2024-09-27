@@ -1,0 +1,59 @@
+.header {
+  background: var(--white);
+  height: 100%;
+}
+
+header.dark {
+  background: var(--dark-blue);
+}
+
+h1 {
+  font-size: 16px;
+  color: var(--dark-blue);
+  font-weight: var(--font-800);
+  font-size: 0.9rem;
+}
+
+header.dark h1 {
+  color: var(--white);
+}
+
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.button-dark-theme {
+  font-weight: var(--font-600);
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: max-content;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+header.dark .button-dark-theme {
+  color: var(--white);
+}
+
+.button-dark-theme svg {
+  width: 24px;
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    background-color: var(--white);
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .button-dark-theme {
+    font-size: 14px;
+  }
+}

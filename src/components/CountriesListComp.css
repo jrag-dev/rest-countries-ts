@@ -1,0 +1,20 @@
+.countries-container {
+}
+
+.countries-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  place-items: center;
+  row-gap: 40px;
+}
+
+@media only screen and (min-width: 600px) {
+  .countries-grid {
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-rows: auto;
+    justify-content: space-between;
+    row-gap: 64px;
+    column-gap: 64px;
+  }
+}
